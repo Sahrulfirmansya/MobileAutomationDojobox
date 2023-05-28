@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.1 on win32)" generated="20230528 12:45:01.251" rpa="false" schemaversion="3">
+<suite id="s1" name="Finaltestflightapp" source="D:\DOJOBOX\Mobile automation final test\finaltestflightapp.robot">
+<test id="s1-t1" name="Example Test Cases" line="89">
+<kw name="User can book a flight from new york to london, one way path">
+<kw name="Open Application" library="AppiumLibrary">
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>automationName=UiAutomator2</arg>
+<arg>newCommandTimeout=2500</arg>
+<arg>appActivity=${ACTIVITY_NAME}</arg>
+<arg>appPackage=${PACKAGE_NAME}</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |
+| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<status status="PASS" starttime="20230528 12:45:01.374" endtime="20230528 12:45:07.700"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/login</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:07.701" level="INFO">Clicking element 'id=com.example.myapplication:id/login'.</msg>
+<msg timestamp="20230528 12:45:08.329" level="INFO">criteria is com.example.myapplication:id/login</msg>
+<status status="PASS" starttime="20230528 12:45:07.700" endtime="20230528 12:45:08.329"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]</arg>
+<arg>${id}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:08.331" level="INFO">Typing text 'support@ngendigital.com' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]'</msg>
+<msg timestamp="20230528 12:45:09.523" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[1]</msg>
+<status status="PASS" starttime="20230528 12:45:08.329" endtime="20230528 12:45:09.523"/>
+</kw>
+<kw name="Input Text" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[2]</arg>
+<arg>${password}</arg>
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:09.525" level="INFO">Typing text 'abc123' into text field 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[2]'</msg>
+<msg timestamp="20230528 12:45:10.076" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.EditText[2]</msg>
+<status status="PASS" starttime="20230528 12:45:09.524" endtime="20230528 12:45:10.076"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/signIn</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:10.077" level="INFO">Clicking element 'id=com.example.myapplication:id/signIn'.</msg>
+<msg timestamp="20230528 12:45:10.622" level="INFO">criteria is com.example.myapplication:id/signIn</msg>
+<status status="PASS" starttime="20230528 12:45:10.076" endtime="20230528 12:45:10.622"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 12:45:15.622" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230528 12:45:10.622" endtime="20230528 12:45:15.622"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/book</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:15.624" level="INFO">Clicking element 'id=com.example.myapplication:id/book'.</msg>
+<msg timestamp="20230528 12:45:15.689" level="INFO">criteria is com.example.myapplication:id/book</msg>
+<status status="PASS" starttime="20230528 12:45:15.622" endtime="20230528 12:45:15.689"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 12:45:20.690" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230528 12:45:15.689" endtime="20230528 12:45:20.690"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/spinnerFrom</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:20.693" level="INFO">Clicking element 'id=com.example.myapplication:id/spinnerFrom'.</msg>
+<msg timestamp="20230528 12:45:20.793" level="INFO">criteria is com.example.myapplication:id/spinnerFrom</msg>
+<status status="PASS" starttime="20230528 12:45:20.690" endtime="20230528 12:45:20.793"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 12:45:23.794" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230528 12:45:20.793" endtime="20230528 12:45:23.794"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:23.796" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]'.</msg>
+<msg timestamp="20230528 12:45:24.520" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]</msg>
+<status status="PASS" starttime="20230528 12:45:23.794" endtime="20230528 12:45:24.521"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 12:45:27.521" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230528 12:45:24.521" endtime="20230528 12:45:27.521"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/spinnerTo</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:27.522" level="INFO">Clicking element 'id=com.example.myapplication:id/spinnerTo'.</msg>
+<msg timestamp="20230528 12:45:27.624" level="INFO">criteria is com.example.myapplication:id/spinnerTo</msg>
+<status status="PASS" starttime="20230528 12:45:27.521" endtime="20230528 12:45:27.624"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 12:45:30.625" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230528 12:45:27.624" endtime="20230528 12:45:30.625"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:30.627" level="INFO">Clicking element 'xpath=/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]'.</msg>
+<msg timestamp="20230528 12:45:31.330" level="INFO">xpath criteria: /hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]</msg>
+<status status="PASS" starttime="20230528 12:45:30.625" endtime="20230528 12:45:31.330"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 12:45:34.331" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230528 12:45:31.331" endtime="20230528 12:45:34.331"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/textStartDate</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:34.332" level="INFO">Clicking element 'id=com.example.myapplication:id/textStartDate'.</msg>
+<msg timestamp="20230528 12:45:34.408" level="INFO">criteria is com.example.myapplication:id/textStartDate</msg>
+<status status="PASS" starttime="20230528 12:45:34.331" endtime="20230528 12:45:34.408"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 12:45:37.410" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230528 12:45:34.408" endtime="20230528 12:45:37.410"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="01 August 2019"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:37.411" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="01 August 2019"]'.</msg>
+<msg timestamp="20230528 12:45:38.019" level="INFO">xpath criteria: //android.view.View[@content-desc="01 August 2019"]</msg>
+<status status="PASS" starttime="20230528 12:45:37.410" endtime="20230528 12:45:38.019"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=android:id/button1</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:38.020" level="INFO">Clicking element 'id=android:id/button1'.</msg>
+<msg timestamp="20230528 12:45:38.104" level="INFO">criteria is android:id/button1</msg>
+<status status="PASS" starttime="20230528 12:45:38.019" endtime="20230528 12:45:38.104"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/textEndDate</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:38.106" level="INFO">Clicking element 'id=com.example.myapplication:id/textEndDate'.</msg>
+<msg timestamp="20230528 12:45:38.721" level="INFO">criteria is com.example.myapplication:id/textEndDate</msg>
+<status status="PASS" starttime="20230528 12:45:38.104" endtime="20230528 12:45:38.721"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>xpath=//android.view.View[@content-desc="02 August 2019"]</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:38.722" level="INFO">Clicking element 'xpath=//android.view.View[@content-desc="02 August 2019"]'.</msg>
+<msg timestamp="20230528 12:45:40.256" level="INFO">xpath criteria: //android.view.View[@content-desc="02 August 2019"]</msg>
+<status status="PASS" starttime="20230528 12:45:38.721" endtime="20230528 12:45:40.256"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=android:id/button1</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:40.256" level="INFO">Clicking element 'id=android:id/button1'.</msg>
+<msg timestamp="20230528 12:45:40.340" level="INFO">criteria is android:id/button1</msg>
+<status status="PASS" starttime="20230528 12:45:40.256" endtime="20230528 12:45:40.340"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/radioButtonFlight</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:40.342" level="INFO">Clicking element 'id=com.example.myapplication:id/radioButtonFlight'.</msg>
+<msg timestamp="20230528 12:45:40.956" level="INFO">criteria is com.example.myapplication:id/radioButtonFlight</msg>
+<status status="PASS" starttime="20230528 12:45:40.341" endtime="20230528 12:45:40.956"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/book_flight</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:40.958" level="INFO">Clicking element 'id=com.example.myapplication:id/book_flight'.</msg>
+<msg timestamp="20230528 12:45:42.766" level="INFO">criteria is com.example.myapplication:id/book_flight</msg>
+<status status="PASS" starttime="20230528 12:45:40.956" endtime="20230528 12:45:42.767"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/price1</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:42.769" level="INFO">Clicking element 'id=com.example.myapplication:id/price1'.</msg>
+<msg timestamp="20230528 12:45:43.446" level="INFO">criteria is com.example.myapplication:id/price1</msg>
+<status status="PASS" starttime="20230528 12:45:42.767" endtime="20230528 12:45:43.446"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>id=com.example.myapplication:id/confirm_order</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20230528 12:45:43.447" level="INFO">Clicking element 'id=com.example.myapplication:id/confirm_order'.</msg>
+<msg timestamp="20230528 12:45:43.508" level="INFO">criteria is com.example.myapplication:id/confirm_order</msg>
+<status status="PASS" starttime="20230528 12:45:43.446" endtime="20230528 12:45:43.508"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230528 12:45:46.509" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230528 12:45:43.508" endtime="20230528 12:45:46.509"/>
+</kw>
+<kw name="Text Should Be Visible" library="AppiumLibrary">
+<arg>Your flight is booked. Reservation number is CADX2214</arg>
+<doc>Verifies that element identified with text is visible.</doc>
+<msg timestamp="20230528 12:45:46.547" level="INFO">xpath criteria: //*[contains(@text,"Your flight is booked. Reservation number is CADX2214")]</msg>
+<status status="PASS" starttime="20230528 12:45:46.509" endtime="20230528 12:45:46.547"/>
+</kw>
+<status status="PASS" starttime="20230528 12:45:01.374" endtime="20230528 12:45:46.547"/>
+</kw>
+<status status="PASS" starttime="20230528 12:45:01.373" endtime="20230528 12:45:46.548"/>
+</test>
+<status status="PASS" starttime="20230528 12:45:01.253" endtime="20230528 12:45:46.548"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Finaltestflightapp">Finaltestflightapp</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
